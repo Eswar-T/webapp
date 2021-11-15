@@ -8,6 +8,13 @@ function App() {
   const [restoDetails, setrestoDetails] = useState([]);
 
 useEffect(()=>{
+//   const requestOptions = {
+//     method: 'GET',
+//     headers: { 'Content-Type': 'application/json' },
+// };
+//   fetch('https://jsonplaceholder.typicode.com/posts/1', requestOptions)
+//   .then(response => response.json())
+//   .then(data => this.setState({ postId: data.id }));
   setrestoDetails(restaurantItems.category)
   console.log(restoDetails,"detai;s")
 },[restoDetails])
